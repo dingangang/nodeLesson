@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const mine = require('mime');
+const chartServer = require('./lib/chat_server');
 const cache = {};
 
 function send404(response) {
@@ -55,3 +56,5 @@ const server = http.createServer(function (request, response) {
 server.listen(3000, function() {
   console.log('Server listening on port 3000.')
 })
+
+chartServer.listen(server);

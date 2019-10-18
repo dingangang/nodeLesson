@@ -1,0 +1,19 @@
+{
+  "name": "nodelesson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "socket.io": "~0.9.6",
+    "mime": "~1.2.7"
+  },
+  "author": "",
+  "license": "ISC"
+}
